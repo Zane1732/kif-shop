@@ -24,15 +24,36 @@ body {
     100% { background-position: 0% 50%; }
 }
 
+/* Play Button */
+#play-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+    transform: perspective(10px) translateZ(0);
+    transition: transform 0.2s ease;
+}
+
+#play-btn:hover {
+    transform: perspective(10px) translateZ(5px);
+}
+
 /* Background YouTube Video */
 #background-video {
-    position: absolute; /* Fixes it behind the content */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
     z-index: -1; /* Ensure it stays behind all other content */
-    object-fit: cover; /* Ensures the video covers the entire screen */
 }
 
 /* Header */
@@ -168,6 +189,16 @@ button:hover {
 #checkout-btn {
     margin-top: 15px;
     display: block;
-    background: linear-gradient(135deg, #f58529, #dd2a7b);
+    width: 100%;
+    background-color: #515bd4;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
 }
 
+#checkout-btn:hover {
+    background-color: #4c49e2;
+}
