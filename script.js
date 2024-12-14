@@ -44,7 +44,7 @@ function updateCart() {
     cart.forEach((item) => {
         const cartItem = document.createElement("div");
         cartItem.className = "cart-item";
-        cartItem.innerHTML = ` 
+        cartItem.innerHTML = `
             <p><strong>${item.name}</strong> - $${item.price}</p>
             <button onclick="removeFromCart('${item.id}')">Remove</button>
         `;
@@ -58,13 +58,11 @@ function removeFromCart(id) {
     updateCart();
 }
 
-// Redirect to Discord when clicking "Checkout"
-function checkout() {
+// Redirect to Discord
+function redirectToDiscord() {
     if (cart.length === 0) {
         alert("Your cart is empty!");
         return;
     }
     window.location.href = "https://discord.gg/bmERaxE27s"; // Replace with your Discord link
-}
-ith your Discord link
 }
