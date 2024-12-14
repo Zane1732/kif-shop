@@ -3,48 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kifs Shop - Social Media Services</title>
+    <title>Kifs Shop | Social Media Services</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <h1>Kifs Shop</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="#intro">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#cart">Cart</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Intro Section -->
     <main>
-        <!-- Home Section -->
-        <section id="home">
+        <section id="intro">
             <h2>Welcome to Kifs Shop</h2>
-            <p>Get the best social media growth services tailored for you.</p>
+            <p>Your one-stop shop for social media growth services! Get followers, likes, and views for Instagram, YouTube, and TikTok at unbeatable prices.</p>
         </section>
 
         <!-- Services Section -->
         <section id="services">
             <h2>Our Services</h2>
-            <div class="service" data-id="1" data-name="Instagram Followers" data-price="10">
-                <h3>Instagram Followers</h3>
-                <p>Boost your profile with 1000+ followers instantly.</p>
-                <span>$10</span>
-                <button onclick="addToCart(this)">Add to Cart</button>
+            
+            <!-- Instagram Services -->
+            <div class="service-category">
+                <h3>Instagram Services</h3>
+                <div class="service" data-id="1" data-name="1,000 Followers (Instagram)" data-price="4">
+                    <p><strong>1,000 Followers</strong></p>
+                    <span>$4</span>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
+                <div class="service" data-id="2" data-name="1,000 Likes (Instagram)" data-price="1">
+                    <p><strong>1,000 Likes</strong></p>
+                    <span>$1</span>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
+                <div class="service" data-id="3" data-name="1,000 Views (Instagram)" data-price="0.75">
+                    <p><strong>1,000 Views</strong></p>
+                    <span>¢75</span>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
             </div>
-            <div class="service" data-id="2" data-name="Facebook Likes" data-price="8">
-                <h3>Facebook Likes</h3>
-                <p>Get high-quality likes to grow your page organically.</p>
-                <span>$8</span>
-                <button onclick="addToCart(this)">Add to Cart</button>
+            
+            <!-- YouTube Services -->
+            <div class="service-category">
+                <h3>YouTube Services</h3>
+                <div class="service" data-id="4" data-name="1,000 Subscribers (YouTube)" data-price="4">
+                    <p><strong>1,000 Subscribers</strong></p>
+                    <span>$4</span>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
+                <div class="service" data-id="5" data-name="1,000 Likes (YouTube)" data-price="1">
+                    <p><strong>1,000 Likes</strong></p>
+                    <span>$1</span>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
+                <div class="service" data-id="6" data-name="1,000 Views (YouTube)" data-price="1">
+                    <p><strong>1,000 Views</strong></p>
+                    <span>$1</span>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
             </div>
-            <div class="service" data-id="3" data-name="Twitter Retweets" data-price="12">
-                <h3>Twitter Retweets</h3>
-                <p>Enhance your tweets with retweets from real accounts.</p>
-                <span>$12</span>
-                <button onclick="addToCart(this)">Add to Cart</button>
+
+            <!-- TikTok Services -->
+            <div class="service-category">
+                <h3>TikTok Services</h3>
+                <div class="service" data-id="7" data-name="1,000 Followers (TikTok)" data-price="4">
+                    <p><strong>1,000 Followers</strong></p>
+                    <span>$4</span>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
+                <div class="service" data-id="8" data-name="1,000 Likes (TikTok)" data-price="1">
+                    <p><strong>1,000 Likes</strong></p>
+                    <span>$1</span>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
+                <div class="service" data-id="9" data-name="100,000 Views (TikTok)" data-price="0.25">
+                    <p><strong>100,000 Views</strong></p>
+                    <span>¢25</span>
+                    <button onclick="addToCart(this)">Add to Cart</button>
+                </div>
             </div>
         </section>
 
@@ -54,14 +97,11 @@
             <div id="cart-items">
                 <p>Your cart is empty.</p>
             </div>
-            <button id="checkout-btn" onclick="redirectToDiscord()">Checkout</button>
+            <button id="checkout-btn" onclick="checkout()">Checkout</button>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; 2024 Kifs Shop. All rights reserved.</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
+
