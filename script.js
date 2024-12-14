@@ -1,5 +1,17 @@
 let cart = [];
 
+// Video play button functionality
+function playVideo() {
+    const iframe = document.getElementById("background-video");
+    const playBtn = document.getElementById("play-btn");
+
+    // Toggle video play and hide the play button
+    if (iframe.src.includes("autoplay=0")) {
+        iframe.src = iframe.src.replace("autoplay=0", "autoplay=1");
+        playBtn.style.display = "none";
+    }
+}
+
 // Add service to cart
 function addToCart(button) {
     const service = button.parentElement;
