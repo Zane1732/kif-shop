@@ -58,11 +58,10 @@ function removeFromCart(id) {
     updateCart();
 }
 
-// Redirect to Discord
 function redirectToDiscord() {
-    if (cart.length === 0) {
-        alert("Your cart is empty! Please add items to your cart before checking out.");
-        return;
-    }
-    window.location.href = "https://discord.com"; // Replace this with your actual Discord link.
+    // Define the Discord invite link here
+    const discordLink = "https://discord.com/invite/YOUR_DISCORD_INVITE_LINK";  // Replace with your Discord invite link
+
+    // Redirect to the Discord link
+    window.location.href = discordLink;
 }
