@@ -52,5 +52,5 @@ function redirectToDiscord() {
         alert("Your cart is empty!");
         return;
     }
-    window.location.href = "https://discord.com"; // Replace with your Discord link
+    window.location.href = "https://discord.gg/bmERaxE27s"; // Replace with your Discord link
 }
