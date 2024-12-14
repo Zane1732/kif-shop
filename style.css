@@ -1,4 +1,3 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative; /* Necessary for proper stacking of elements */
 }
 
 /* Gradient Animation */
@@ -22,6 +22,17 @@ body {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
+}
+
+/* Background YouTube Video */
+#background-video {
+    position: absolute; /* Fixes it behind the content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure it stays behind all other content */
+    object-fit: cover; /* Ensures the video covers the entire screen */
 }
 
 /* Header */
