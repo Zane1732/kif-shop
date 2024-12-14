@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Play Button -->
+    <button id="play-btn" onclick="playVideo()">Play Video</button>
+
     <!-- Background YouTube Video -->
-    <iframe src="https://www.youtube.com/embed/Ulm_Z646eBg?autoplay=1&controls=0&loop=1&playlist=Ulm_Z646eBg&modestbranding=1&rel=0&showinfo=0" 
+    <iframe id="background-video" src="https://www.youtube.com/embed/Ulm_Z646eBg?autoplay=0&controls=0&loop=1&playlist=Ulm_Z646eBg&modestbranding=1&rel=0&showinfo=0&mute=1" 
             frameborder="0" 
             allow="autoplay; fullscreen" 
-            id="background-video"></iframe>
-    
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+    </iframe>
+
     <!-- Header -->
     <header>
         <h1>Kifs Shop</h1>
