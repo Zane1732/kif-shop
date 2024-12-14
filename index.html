@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | Kifs Shop</title>
+    <title>Kifs Shop | Social Media Services</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,18 +12,24 @@
         <h1>Kifs Shop</h1>
         <nav>
             <ul>
-                <li><a href="index.html#intro">Home</a></li>
-                <li><a href="services.html">Our Services</a></li>
-                <li><a href="index.html#cart">Cart</a></li>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#cart">Cart</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Services Section -->
+    <!-- Intro Section -->
     <main>
+        <section id="intro">
+            <h2>Welcome to Kifs Shop</h2>
+            <p>Your one-stop shop for social media growth services! Get followers, likes, and views for Instagram, YouTube, and TikTok at unbeatable prices.</p>
+        </section>
+
+        <!-- Services Section -->
         <section id="services">
             <h2>Our Services</h2>
-
+            
             <!-- Instagram Services -->
             <div class="service-category">
                 <h3>Instagram Services</h3>
@@ -43,7 +49,7 @@
                     <button onclick="addToCart(this)">Add to Cart</button>
                 </div>
             </div>
-
+            
             <!-- YouTube Services -->
             <div class="service-category">
                 <h3>YouTube Services</h3>
@@ -83,6 +89,15 @@
                     <button onclick="addToCart(this)">Add to Cart</button>
                 </div>
             </div>
+        </section>
+
+        <!-- Cart Section -->
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <p>Your cart is empty.</p>
+            </div>
+            <button id="checkout-btn" onclick="checkout()">Checkout</button>
         </section>
     </main>
 
